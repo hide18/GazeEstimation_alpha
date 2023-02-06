@@ -15,9 +15,9 @@ To be presented at [IEICE](https://www.ieice-taikai.jp/2023general/jpn/) (as of 
 
 Results for the Gaze360 dataset using Mean Angular Error(MAE) as the evaluation index are as follows.
 
-|             | L2CS-Net |    Ours   |
-| ----------- | -------- | --------- |
-| MAE(degree) |   10.41  | **10.30** |
+|              | L2CS-Net |    Ours   |
+| ------------ | -------- | --------- |
+| MAE(degrees) |   10.41  | **10.30** |
 
 ## Usage
 
