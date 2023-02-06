@@ -11,6 +11,14 @@ This is an appearance-based 3D gaze estimation method. It is a method to improve
 
 To be presented at [IEICE](https://www.ieice-taikai.jp/2023general/jpn/) (as of 2023.02.02).
 
+## Benchmark Performance
+
+Results for the Gaze360 dataset using Mean Angular Error(MAE) as the evaluation index are as follows.
+
+|             | L2CS-Net |    Ours   |
+| ----------- | -------- | --------- |
+| MAE(degree) |   10.41  | **10.30** |
+
 ## Usage
 
 ### train
