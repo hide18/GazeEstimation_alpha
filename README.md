@@ -19,6 +19,13 @@ Results for the Gaze360 dataset using Mean Angular Error(MAE) as the evaluation 
 | ------------ | -------- | --------- |
 | MAE(degrees) |   10.41  | **10.30** |
 
+
+## Quick Start
+```
+python demo.py --snapshot "./"
+```
+Argument: Give the path to the model's weight.
+
 ## Usage
 
 ### train
