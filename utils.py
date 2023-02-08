@@ -10,7 +10,6 @@ from math import cos, sin
 from pathlib import Path
 import subprocess
 import re
-from model import L2CS
 import torchvision
 import sys
 
