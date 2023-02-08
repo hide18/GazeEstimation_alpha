@@ -21,6 +21,8 @@ Results for the Gaze360 dataset using Mean Angular Error(MAE) as the evaluation 
 
 
 ## Quick Start
+A simple demonstration can be performed using a pre-trained model and a web camera.
+
 ```
 python demo.py --snapshot "./"
 ```
