@@ -4,7 +4,6 @@
 Model for 3D Gaze Estimation based on [L2CS-Net](https://github.com/Ahmednull/L2CS-Net)
 
 ## Demo
-comming soon...
 
 
 
