@@ -60,7 +60,7 @@ def parse_args():
   args = parser.parse_args()
   return args
 
-
+#Specify layers to be learned and layers not to be learned
 def get_ignored_params(model):
   b = [model.conv1, model.bn1]
   for i in range(len(b)):
@@ -90,7 +90,6 @@ def get_fc_params(model):
 
 
 def load_filtered_state_dict(model, snapshot):
-  #By user apaszke from discuss.pytorch.org
   model_dict = model.state_dict()
   snapshot = {k: v for k, v in snapshot.items() if k in model_dict}
   model_dict.update(snapshot)
@@ -238,6 +237,7 @@ if __name__=='__main__':
 
           pitch, yaw = model(face, left, right)
 
+          #Cross Entropy Loss
           loss_pitch = criterion(pitch, label_pitch)
           loss_yaw = criterion(yaw, label_yaw)
 
@@ -246,7 +246,7 @@ if __name__=='__main__':
           pre_pitch = torch.sum(pre_pitch * idx_tensor, 1) * 2 - 180
           pre_yaw = torch.sum(pre_yaw * idx_tensor, 1) * 2 - 180
 
-          #Loss
+          #MSE Loss
           loss_cont_pitch = reg_criterion(pre_pitch, label_pitch_cont)
           loss_cont_yaw = reg_criterion(pre_yaw, label_yaw_cont)
 
